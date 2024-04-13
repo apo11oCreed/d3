@@ -77,3 +77,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+ul {
+  container: vite / inline-size;
+}
+
+@container vite (min-width: 700px){
+  li {
+    font-size: clamp(0.5rem,2cqw,2rem);
+  }
+}
